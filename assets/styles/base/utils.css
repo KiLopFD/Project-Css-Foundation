@@ -1,0 +1,36 @@
+/* Màu cho text  */
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-prio {
+    color: var(--prio-text);
+}
+
+/* Thiết lập cho hình  */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Thiết lập thẻ a  */
+a:hover{
+    color: #ef9e38;
+    text-decoration: none;
+    transition: all 0.75s ease-in-out;
+}
+
+a{
+    color: white;
+}
+
+/* Thiết lập ul,ol,li  */
+ul,ol {
+    padding-left: 0;
+    list-style-type: none;
+}

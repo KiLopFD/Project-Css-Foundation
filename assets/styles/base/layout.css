@@ -1,0 +1,44 @@
+/* Hiện thi kiểu flex  */
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+
+/* Container  */
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+}
+/* 700px <=, , <= 1000px  */
+@media screen and (min-width: 800px) { 
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+
+
+/* Vị trí postion */
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.sticky {
+    position: sticky;
+}
+.fixed {
+    position: fixed;
+}

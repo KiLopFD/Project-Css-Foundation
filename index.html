@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Css</title>
+    <!-- Xóa các css mặc định của trình duyệt, trong reset.css đã có font  -->
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <!-- Thiết lập biến cho css  -->
+    <link rel="stylesheet" href="./assets/styles/root.css">
+    <!-- Thiết lập css chung  -->
+    <link rel="stylesheet" href="./assets/styles/base/layout.css">
+    <link rel="stylesheet" href="./assets/styles/base/utils.css">
+    <!-- Css custom  -->
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <!-- Tương thích giao diện  -->
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+</head>
+
+<body>
+    <!-- Header  -->
+    <header>
+        <div class="in-wrap">
+            <div class="header-1">
+                <div class="in-wrap container flex align-items-center">
+                    <div class="part-1">
+                        <img class="logo" src="./assets/images/logo.webp" alt="">
+                    </div>
+                    <div class="part-2 flex align-items-center">
+                        <a href="" class="text-white">Đăng nhập</a>
+                        <a href="" class="text-white">Giỏ hàng</a>
+                        <div class="cart relative">
+                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M7.2998 5H22L20 12H8.37675M21 16H9L7 3H4M4 8H2M5 11H2M6 14H2M10 20C10 20.5523 9.55228 21 9 21C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19C9.55228 19 10 19.4477 10 20ZM21 20C21 20.5523 20.5523 21 20 21C19.4477 21 19 20.5523 19 20C19 19.4477 19.4477 19 20 19C20.5523 19 21 19.4477 21 20Z"
+                                        stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                            <span class="absolute text-white number-products">
+                                8
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-2">
+                <div class="in-wrap container flex align-items-center">
+                    <div class="part-1">
+                        <ul class="flex">
+                            <li><a href="">Trang chủ</a></li>
+                            <li><a href="">Đồ Nam</a></li>
+                            <li><a href="">Đồ Nữ</a></li>
+                            <li><a href="">Đồ Trẻ Em</a></li>
+                            <li><a href="">Phụ Kiện</a></li>
+                            <li><a href="">Tin Tức</a></li>
+                            <li><a href="">Khuyến Mãi</a></li>
+                        </ul>
+                    </div>
+                    <div class="part-2">
+                        <p><a href="">Tìm Kiếm</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- End Header  -->
+</body>
+
+</html>
