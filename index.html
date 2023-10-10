@@ -24,13 +24,35 @@
         <div class="in-wrap">
             <div class="header-1">
                 <div class="in-wrap container flex align-items-center">
+                    <div class="menu md-hidden block relative">
+                        <div class="wrap-menu">
+                            <svg id="menu-action" class="cursor-pointer" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </div>
+                        <div class="list-menu absolute" id="show-menu-action">
+                            <ul class="">
+                                <li><a href="">Trang chủ</a></li>
+                                <li><a href="">Đồ Nam</a></li>
+                                <li><a href="">Đồ Nữ</a></li>
+                                <li><a href="">Đồ Trẻ Em</a></li>
+                                <li><a href="">Phụ Kiện</a></li>
+                                <li><a href="">Tin Tức</a></li>
+                                <li><a href="">Khuyến Mãi</a></li>
+                            </ul>
+                            <div class="close-menu" id="close-menu-action">
+                                <svg width="2rem" height="2rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+                            </div>
+                        </div>
+                    </div>
                     <div class="part-1">
                         <img class="logo" src="./assets/images/logo.webp" alt="">
                     </div>
                     <div class="part-2 flex align-items-center">
-                        <a href="" class="text-white">Đăng nhập</a>
-                        <a href="" class="text-white">Giỏ hàng</a>
-                        <div class="cart relative">
+                        <a href="" class="text-white md-block hidden">Đăng nhập</a>
+                        <a href="" class="text-white md-block hidden">Giỏ hàng</a>
+                        <svg class="md-hidden block cursor-pointer" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 21C4 17.4735 6.60771 14.5561 10 14.0709M19.8726 15.2038C19.8044 15.2079 19.7357 15.21 19.6667 15.21C18.6422 15.21 17.7077 14.7524 17 14C16.2923 14.7524 15.3578 15.2099 14.3333 15.2099C14.2643 15.2099 14.1956 15.2078 14.1274 15.2037C14.0442 15.5853 14 15.9855 14 16.3979C14 18.6121 15.2748 20.4725 17 21C18.7252 20.4725 20 18.6121 20 16.3979C20 15.9855 19.9558 15.5853 19.8726 15.2038ZM15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+
+                        <svg class="md-hidden block cursor-pointer" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        <div class="cart relative cursor-pointer">
                             <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -49,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="header-2">
+            <div class="header-2 md-block hidden">
                 <div class="in-wrap container flex align-items-center">
                     <div class="part-1">
                         <ul class="flex">
@@ -71,6 +93,12 @@
     </header>
 
     <!-- End Header  -->
+
+
+
+
+    <!-- Nơi đặt js  -->
+    <script src="./scripts/header/menu.js"></script>
 </body>
 
 </html>

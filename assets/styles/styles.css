@@ -12,7 +12,7 @@ header .header-1{
     padding: 1rem 0;
 }
 header .header-1 .part-1{
-    padding-left: 30%;
+    /* padding-left: 30%; bởi vì khi màn hình < md => phải thay padding left bằng menu */
     width: 70%;
 }
 header .header-1 .part-2{
@@ -51,5 +51,47 @@ header .header-2 .part-1 a{
 }
 header .header-2 .part-1 ul{
     justify-content: center;
+}
+
+header .header-1 .menu{
+    width: 30%;
+}
+
+header .header-1 .menu .list-menu{
+    background: var(--bg-menu);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+    display: none;
+}
+/* header .header-1 .menu .list-menu:active{
+    transition: all 0.7s ease-in-out;
+} */
+
+header .header-1 .menu .list-menu .close-menu{
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+header .header-1 .menu .list-menu .close-menu:hover{
+    scale: 1.1;
+    transition: all 0.5s ease-in-out;
+}
+header .header-1 .menu .show-menu{
+    display: block;
+}
+
+@media screen and (min-width: 900px) {
+    header .header-1 .part-1 {
+        padding-left: 30%;
+    }
 }
 /* End Css Header  */

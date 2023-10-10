@@ -13,12 +13,8 @@
 
 
 /* Container  */
-@media screen and (min-width: 1000px) {
-    .container {
-        width: 80%;
-        margin: 0 auto;
-        padding: 0 2rem;
-    }
+.container{
+    padding: 0 1.5rem;
 }
 /* 700px <=, , <= 1000px  */
 @media screen and (min-width: 800px) { 
@@ -27,6 +23,13 @@
     }
 }
 
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+}
 
 
 /* Vị trí postion */
@@ -41,4 +44,22 @@
 }
 .fixed {
     position: fixed;
+}
+
+/* Responsive Display  */
+.block {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+/* Đặt responsive ở cuối để class trong responsive thay đổi  */
+@media screen and (min-width: 900px) {
+    .md-block{
+        display: block;
+    }
+    .md-hidden{
+        display: none;
+    }
 }
