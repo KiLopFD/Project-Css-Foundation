@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="./assets/styles/base/utils.css">
     <!-- Css custom  -->
     <link rel="stylesheet" href="./assets/styles/styles.css">
+    <!-- Animate and Slick  -->
+    <link rel="stylesheet" href="./assets/styles/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/styles/libs/slick/slick.css">
+    <link rel="stylesheet" href="./assets/styles/libs/wowjs/animate.css">
+    <!-- Fontawsome  -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
     <!-- Tương thích giao diện  -->
     <link rel="stylesheet" href="./assets/styles/responsive.css">
 </head>
@@ -93,12 +99,74 @@
     </header>
 
     <!-- End Header  -->
-
+    <main>
+        <section class="sec-1">
+            <div class="inner-wrap">
+                <div class="slider relative">
+                    <div class="img-1 css-img-sec-1"></div>
+                    <div class="img-2 css-img-sec-1"></div>
+                    <div class="img-3 css-img-sec-1"></div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
 
     <!-- Nơi đặt js  -->
     <script src="./scripts/header/menu.js"></script>
+    <!-- Thư viện  -->
+    <script src="./assets/styles/libs/jquery.min.js"></script>
+    <script src="./assets/styles/libs/slick/slick.min.js"></script>
+    <script src="./assets/styles/libs/wowjs/effect.js"></script>
+    <script src="./assets/fontawesome/js/all.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $('.slider').slick({
+            // biến toàn cục
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            dots: true,
+            // responsive
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 760,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                    }
+                },
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
 </body>
 
 </html>

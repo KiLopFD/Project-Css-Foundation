@@ -40,3 +40,8 @@ ul,ol {
 .cursor-pointer{
     cursor: pointer;
 }
+
+/* margin trái phải  */
+.mx-auto{
+    margin: 0 auto;
+}
