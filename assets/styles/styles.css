@@ -72,6 +72,7 @@ header .header-1 .menu .list-menu {
     border-radius: 0.5rem;
     width: 10rem;
     display: none;
+    z-index: 30;
 }
 
 /* header .header-1 .menu .list-menu:active{
@@ -203,3 +204,23 @@ main .sec-1 .slick-dots .slick-active{
     background-color: white;
 }
 /* End Section-1 */
+
+/* Section-2  */
+main .sec-2 img:hover{
+    scale: 1.1;
+    transition: all 0.8s ease-in-out;
+}
+
+main .sec-2 img:is(:not(:hover)){
+    scale: 1;
+    transition: all 0.8s ease-in-out;
+}
+
+main .sec-2 .card{
+    width: calc(100% / 4);
+    min-width: 12rem;
+}
+
+/* main .sec-2 .card-1{
+    width: 15rem;
+} */

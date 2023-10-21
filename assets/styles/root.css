@@ -17,3 +17,10 @@ html{
         font-size: 15.6px;
     }
 }
+
+img {
+    object-fit: cover;
+    object-position: center;
+    width: auto;
+    height: auto;
+}

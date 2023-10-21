@@ -109,6 +109,20 @@
                 </div>
             </div>
         </section>
+        <section class="sec-2">
+            <div class="filter container">
+                <select name="filterProduct" id="filter-value">
+                    <option value="inc">Giá trị tăng dần</option>
+                    <option value="desc">Giá trị giãm dần</option>
+                    <option value="clear">Mặc định</option>
+                </select>
+            </div>
+            <div class="inner-wrap">
+                <div class="content container flex overflow-hidden flex-wrap" id="content-sec-2">
+                    
+                </div>
+            </div>
+        </section>
     </main>
 
 
@@ -120,6 +134,8 @@
     <script src="./assets/styles/libs/slick/slick.min.js"></script>
     <script src="./assets/styles/libs/wowjs/effect.js"></script>
     <script src="./assets/fontawesome/js/all.min.js"></script>
+    <!-- Khi mở rộng nội dụng phải có type module  -->
+    <script type="module" src="./scripts/body/sections/sec2.js"></script>
     <script>
         new WOW().init();
     </script>
