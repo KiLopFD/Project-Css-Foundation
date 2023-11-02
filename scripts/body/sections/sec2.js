@@ -2,7 +2,7 @@
 const listProducts = [
     {
         id:1,
-        name: "Đồng hồ",
+        name: "Đồng hồ jlkdjfsklfjsdlklkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk",
         price: 500000,
     },
     {
@@ -42,14 +42,17 @@ let filter = document.getElementById('filter-value')
 const drawProduct = (list = listProducts) => {
     let html = ""
     list.forEach((value, index) => {
-        html += `<div class="card card-${index + 1}">
-        <div class="overflow-hidden">
-        <img src="./assets/images/product/p${value.id}.jpg" alt="">
-        </div>
-        <div class="intro">
-        <p class="name text-center">${value.name}</p>
-        <p class="price text-center">${value.price}</p>
-        </div>
+        html += `
+        <div class="card card-${index + 1}">
+            <div class="inner-wrap">
+                <div class="overflow-hidden">
+                    <img src="./assets/images/product/p${value.id}.jpg" alt="">
+                </div>
+                <div class="intro overflow-hidden">
+                    <p class="name text-center">${value.name.length > 20 ? value.name.slice(0,20) + '...' : value.name}</p>
+                    <p class="price text-center">${value.price+'$'}</p>
+                </div>
+            </div>
         </div>`
         // console.log(html);
     })

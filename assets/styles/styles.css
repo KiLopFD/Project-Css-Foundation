@@ -57,6 +57,25 @@ header .header-2 .part-1 a {
     padding: 1rem 0.5rem;
     display: block;
 }
+header li{
+    overflow: hidden;
+}
+header .header-bar {
+    height: 0.25rem;
+    background-color: #f7f4f4;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    border-radius: 0.3rem;
+    transition: all 0.7s ease-in-out;
+    box-shadow: 0;
+}
+header .header-2 .part-1 li:hover .header-bar{
+    left: 0;
+    transition: all 0.7s ease-in-out;
+    box-shadow: 0 0 2rem 2rem #dcdcdc;
+}
+
 
 header .header-2 .part-1 ul {
     justify-content: center;
@@ -219,7 +238,36 @@ main .sec-2 img:is(:not(:hover)){
 main .sec-2 .card{
     width: calc(100% / 4);
     min-width: 12rem;
+    /* background-color: #f7f4f4; */
+    padding: 0.2rem;
+    background-clip: content-box;
 }
+
+main .sec-2 .card .inner-wrap{
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: #f7f4f4;
+}
+
+main .sec-2 .filter {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+main .sec-2 .filter .select-options{
+    border-radius: 0.3rem;
+    border: 0.15rem solid #d6d1d1;
+    background: #f7f4f4;
+    cursor: pointer;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+
+main .sec-2 .filter .select-options option{
+    cursor: pointer;
+    /* transition: all 0.5s ease-in-out; */
+}
+
 
 /* main .sec-2 .card-1{
     width: 15rem;

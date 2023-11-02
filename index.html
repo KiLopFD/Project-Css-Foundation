@@ -26,7 +26,7 @@
 
 <body>
     <!-- Header  -->
-    <header>
+    <header id="header">
         <div class="in-wrap">
             <div class="header-1">
                 <div class="in-wrap container flex align-items-center">
@@ -36,13 +36,15 @@
                         </div>
                         <div class="list-menu absolute" id="show-menu-action">
                             <ul class="">
-                                <li><a href="">Trang chủ</a></li>
-                                <li><a href="">Đồ Nam</a></li>
-                                <li><a href="">Đồ Nữ</a></li>
-                                <li><a href="">Đồ Trẻ Em</a></li>
-                                <li><a href="">Phụ Kiện</a></li>
-                                <li><a href="">Tin Tức</a></li>
-                                <li><a href="">Khuyến Mãi</a></li>
+                                <li class="relative">
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li><a href="#">Đồ Nam</a></li>
+                                <li><a href="#">Đồ Nữ</a></li>
+                                <li><a href="#">Đồ Trẻ Em</a></li>
+                                <li><a href="#">Phụ Kiện</a></li>
+                                <li><a href="#">Tin Tức</a></li>
+                                <li><a href="#">Khuyến Mãi</a></li>
                             </ul>
                             <div class="close-menu" id="close-menu-action">
                                 <svg width="2rem" height="2rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
@@ -81,8 +83,14 @@
                 <div class="in-wrap container flex align-items-center">
                     <div class="part-1">
                         <ul class="flex">
-                            <li><a href="">Trang chủ</a></li>
-                            <li><a href="">Đồ Nam</a></li>
+                            <li class="relative">
+                                <a href="">Trang chủ</a>
+                                <div class="header-bar absolute"></div>
+                            </li>
+                            <li class="relative">
+                                <a href="">Đồ Nam</a>
+                                <div class="header-bar absolute"></div>
+                            </li>
                             <li><a href="">Đồ Nữ</a></li>
                             <li><a href="">Đồ Trẻ Em</a></li>
                             <li><a href="">Phụ Kiện</a></li>
@@ -111,7 +119,7 @@
         </section>
         <section class="sec-2">
             <div class="filter container">
-                <select name="filterProduct" id="filter-value">
+                <select class="select-options" name="filterProduct" id="filter-value">
                     <option value="inc">Giá trị tăng dần</option>
                     <option value="desc">Giá trị giãm dần</option>
                     <option value="clear">Mặc định</option>
@@ -119,7 +127,7 @@
             </div>
             <div class="inner-wrap">
                 <div class="content container flex overflow-hidden flex-wrap" id="content-sec-2">
-                    
+                    <!-- Javascript chèn code html vào bằng kĩ thuật DOM  -->
                 </div>
             </div>
         </section>
