@@ -11,22 +11,27 @@ const listProducts = [
         price: 800000,
     },
     {
-        id:3,
+        id:4,
         name: "Đồng hồ",
         price: 600000,
     },
     {
-        id:3,
+        id:5,
         name: "Đồng hồ",
         price: 600000,
     },
     {
-        id:3,
+        id:6,
         name: "Đồng hồ",
         price: 600000,
     },
     {
-        id:3,
+        id:7,
+        name: "Đồng hồ",
+        price: 600000,
+    },
+    {
+        id:8,
         name: "Đồng hồ",
         price: 600000,
     },
@@ -44,13 +49,17 @@ const drawProduct = (list = listProducts) => {
     list.forEach((value, index) => {
         html += `
         <div class="card card-${index + 1}">
-            <div class="inner-wrap">
+            <div class="inner-wrap list-product">
                 <div class="overflow-hidden">
                     <img src="./assets/images/product/p${value.id}.jpg" alt="">
                 </div>
                 <div class="intro overflow-hidden">
                     <p class="name text-center">${value.name.length > 20 ? value.name.slice(0,20) + '...' : value.name}</p>
                     <p class="price text-center">${value.price+'$'}</p>
+                </div>
+                <div class="btn-group">
+                    <button class="add-to-cart cart-${value.id}">Thêm Vào Giỏ</button>
+                    <button>Mua Ngay</button>
                 </div>
             </div>
         </div>`
@@ -87,3 +96,30 @@ filter.addEventListener('change', (event) => {
 })
 
 drawProduct()
+
+
+let btnAddToCart = document.getElementsByClassName("add-to-cart");
+let numberCart = document.getElementById('number-carts');
+let listCart = JSON.parse(localStorage.getItem('listCart'));
+
+if (listCart === null || listCart === undefined) {
+    listCart = []
+}
+
+
+[...btnAddToCart].forEach((value, index) => {
+    
+    // console.log(splitName);
+    value.addEventListener('click', () => {
+        let splitName = value.className.split('-')
+        let id = Number(splitName[splitName.length - 1])
+
+        let findProduct = listProducts.find((value, index) => value.id === id)
+        listCart.push(findProduct)
+        localStorage.setItem('listCart', JSON.stringify(listCart));
+
+        numberCart.innerHTML = String(listCart.length)
+    })
+
+
+})

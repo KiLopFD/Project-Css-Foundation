@@ -1,0 +1,115 @@
+main .form{
+    margin: 0 auto;
+    width: 20rem;
+    padding: 10rem 0;
+}
+
+main .form .login-form{
+    width: 100%;
+}
+
+main .form .wrap{
+    width: 100%;
+    margin-bottom: 0.8rem;
+    z-index: 0;
+}
+
+
+main .form .inner-wrap{
+    padding: 1rem 0.5rem;
+}
+input{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: antiquewhite;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 0 0.1rem 0.1rem black;
+    border: 0.1rem solid black;
+}
+
+main .form span{
+    /* display: block; */
+    display: inline;
+    /* top: -1.5rem; */
+    top: 200%;
+    left: 1rem;
+    z-index: 5;
+    background-color: black;
+    color: white;
+    padding: 0.1rem;
+    border-radius: 0.3rem;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    font-size: 0.8rem;
+    scale: 2;
+}
+main .form input:focus~span {
+    /* display: block; */
+    display: inline;
+    top: -1rem;
+    /* top: 150%; */
+    left: 1rem;
+    z-index: 5;
+    background-color: black;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    scale: 1;
+}
+
+main .form .btn-login{
+    margin: 0 auto;
+    display: block;
+    border: none;
+    background-color: rgb(220, 218, 218);
+    /* cta: call to action  */
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.35rem;
+    font-size: 1.2rem;
+    /* 500-700: đậm vừa  */
+    font-weight: 600;
+    z-index: 5;
+    /* background: transparent; */
+    transition: all .5s ease-in-out;
+}
+main .form .relative{
+    display: inline-block;
+}
+main .form .relative .form-push{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    left: -100%;
+    /* trái -> 0 -> trái  */
+    background-color: aquamarine;
+    z-index: 0;
+    transition: all .5s ease-in-out;
+}
+
+main .form .btn-login:hover{
+    background-color: transparent;
+    transition: all .5s ease-in-out;
+}
+
+main .form .btn-login:hover~.form-push{
+    left: 0;
+    border-radius: 0.3rem;
+    transition: all .5s ease-in-out;
+}
+
+main .form .title{
+    text-align: center;
+    font-weight: 600;
+}
+
+main form{
+    background-color: #eae7e7;
+    padding: 3rem 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.3rem 0.3rem black;
+}

@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.justify-center{
+    justify-content: center;
+}
+
 
 /* Container  */
 .container{

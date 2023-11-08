@@ -81,11 +81,11 @@ header .header-2 .part-1 ul {
     justify-content: center;
 }
 
-header .header-1 .menu {
+header .menu {
     width: 30%;
 }
 
-header .header-1 .menu .list-menu {
+header .menu .list-menu {
     background: var(--bg-menu);
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -98,7 +98,7 @@ header .header-1 .menu .list-menu {
     transition: all 0.7s ease-in-out;
 } */
 
-header .header-1 .menu .list-menu .close-menu {
+header .menu .list-menu .close-menu {
     position: absolute;
     top: 0.3rem;
     right: 0.3rem;
@@ -112,12 +112,12 @@ header .header-1 .menu .list-menu .close-menu {
 
 }
 
-header .header-1 .menu .list-menu .close-menu:hover {
+header .menu .list-menu .close-menu:hover {
     scale: 1.1;
     transition: all 0.5s ease-in-out;
 }
 
-header .header-1 .menu .show-menu {
+header .menu .show-menu {
     display: block;
 }
 
@@ -126,6 +126,11 @@ header .header-1 .menu .show-menu {
         padding-left: 30%;
     }
 }
+
+#avatar-user {
+    cursor: pointer;
+}
+
 
 /* End Css Header  */
 
@@ -266,6 +271,26 @@ main .sec-2 .filter .select-options{
 main .sec-2 .filter .select-options option{
     cursor: pointer;
     /* transition: all 0.5s ease-in-out; */
+}
+
+.card .list-product .btn-group{
+    display: flex;
+    padding: 1.5rem 0.5rem;
+    gap: 0.5rem;
+}
+
+.card .list-product .btn-group button{
+    border: none;
+    box-shadow: 0 0 0.1rem 0.1rem black;
+    border-radius: 0.3rem;
+    font-weight: 500;
+}
+
+.card .list-product .btn-group button:nth-child(1){
+    background-color: #add9fb;
+}
+.card .list-product .btn-group button:nth-child(2){
+    background-color: #ffb6b6;
 }
 
 
